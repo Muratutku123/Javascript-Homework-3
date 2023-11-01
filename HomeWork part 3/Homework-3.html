@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $('#image1').attr("src","newyork1.jpg");
+    $('#image2').attr("src","newyork2.jpg");
+    $('img').attr("width","360");
+    $('img').attr("height","240");
+    $('#link1').attr("href","https://www.governor.ny.gov");
+    $('#link2').attr("href","https://www.governor.ny.gov");
+    $('img').css("border","8px solid green").slideUp(1500).slideDown(1500);;
+  });
+});
+</script>
+</head>
+<body>
+<h1>Murat Utku SAYIN</h1>
+
+<p> <strong style="color: chartreuse;">&#10004; Compeleted</strong> In this exercise, first select the <b>img</b> elements with the <b>id</b> names <b>image1</b> and <b>image2</b>, then use the <b>jQuery attr() method</b> to change the <b>src</b> attribute values of istanbul1.jpg and istanbul2.jpg with newyork1.jpg and newyork2.jpg; the <b>width</b> attribute value "300" with "360"; and the <b>height</b> attribute value "200" with "240". Then select the <b>a</b> elements with the <b>id</b> names <b>link1</b> and <b>link2</b> and use the<b>jQuery attr() method</b> to change the <b>href</b> attribute values "http://www.istanbul.gov.tr" with "https://www.governor.ny.gov". In another output line below, select the <b>img</b> elements with the <b>id</b> names <b>image1</b> and <b>image2</b> and use the <b>css() method</b> to change the border values as "8px solid green" and <b>chain it</b> with the <b>slideUp()</b> and <b>slideDown()</b> methods, giving <b>1500 milliseconds</b> to each.</p>
+
+<p><a href="https://www.w3schools.com/jquery/html_attr.asp" target="_blank">Click here for the jQuery attr() method</a></p>
+
+<p><a href="https://www.w3schools.com/jquery/jquery_chaining.asp" target="_blank">Click here for the jQuery chaining method</a></p>
+
+<p><button>Click here</button></p>
+
+<a id="link1" href="http://www.istanbul.gov.tr" target="_blank"><img id="image1" src="istanbul1.jpg" width="300" height="200" style="float:left;border:8px solid blue;"></a>
+
+<a id="link2" href="http://www.istanbul.gov.tr" target="_blank"><img id="image2" src="istanbul2.jpg" width="300" height="200" style="float:right;border:8px solid blue;"></a>
+
+</body>
+</html>
